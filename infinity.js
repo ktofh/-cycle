@@ -1,18 +1,19 @@
-let number = 0;
+let number = 1;
 
-leg: while (true){
-    
+alert(number);
+endlessCycle: while (true){
+ 
    const question = prompt('break or continue');
-    ref: switch (question) {
+     switch (question) {
 
         case 'break': 
-        break leg;
-        break ref;
+        break endlessCycle;
+        break;
 
         case 'continue':
-        
+      console.log(number)
         break;
     }
-    alert(number);
+    
     number++;
 }
